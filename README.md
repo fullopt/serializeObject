@@ -11,7 +11,7 @@ Usage:
 			e.preventDefault();
 			$(this).serializeObject().done(function(o){
 				if(window.console) console.log(o);
-				// the object see console
+				// see the object in console
 			});
 		});
 	});
