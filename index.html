@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>serializeObject with files by aleksandr.ru</title>
+		<style>
+			p {
+				font-style: italic;
+			}
+		</style>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="jquery.serializeObject.js"></script>
+		<script>			
+			$(function(){
+				$('form').on('submit', function(e){
+					e.preventDefault();
+					$(this).serializeObject().done(function(o){
+						if(window.console) console.log(o);
+						var j = JSON.stringify(o);
+						alert(j);
+						//window.open("data:image/png;base64," + o.userfile.data);
+					});
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>jQuery Serialize Object with files support</h1>
+		
+		<form>
+			<p><input type="text" name="textinput" placeholder=""> input[name=<q>textinput</q>]</p>
+			<p><label><input type="checkbox" name="chk_no_val"> :checkbox[name=<q>chk_no_val</q>]</label></p>
+			<p><label><input type="checkbox" name="chk_value" value="the-value"> :checkbox[name=<q>chk_value</q>]</label></p>
+			<p><input type="file" name="userfile"> input[name=<q>userfile</q>]</p>
+			<p><input type="file" name="file_multiple" multiple="multiple"> input[name=<q>file_multiple</q>]</p>
+			<p><input type="submit"></p>
+		</form>
+
+		<address>
+			&copy;2017 <a href="aleksandr.ru">aleksandr.ru</a>
+		</address>
+	</body>
+</html>
