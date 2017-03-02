@@ -1,7 +1,7 @@
 # serializeObject
 Serializes a form (or a set of inputs) to an object. It uses FileReader and Deferred to serialize input[type="file"]
 
-Usage:
+## Usage
 ```
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="jquery.serializeObject.js"></script>
@@ -17,5 +17,9 @@ Usage:
 	});
 </script>
 ```
+### Requirements
+- FileReader JavaScript API
+- jQuery 1.5+
 
+---
 (c)2017 aleksandr.ru
