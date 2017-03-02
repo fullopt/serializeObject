@@ -3,6 +3,7 @@
  * Serializes a form (or a set of inputs) to an object. It uses FileReader and Deferred to serialize input[type="file"]
  * @returns {jQuery.Deferred} deferred object
  * @requires jQuery 1.5+
+ * @requires FileReader JavaScript API
  * @author Aleksandr.ru
  * @link http://aleksandr.ru
  * 
