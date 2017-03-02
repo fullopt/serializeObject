@@ -3,6 +3,8 @@ Serializes a form (or a set of inputs) to an object. It uses FileReader and Defe
 
 Usage:
 ```
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="jquery.serializeObject.js"></script>
 <script>			
 	$(function(){
 		$('form').on('submit', function(e) {
