@@ -21,7 +21,7 @@
 			var a = $form.find(':input[name]').not(':checkbox').serializeArray();
 			$form.find(':checkbox[name]').each(function() {
 				if(this.hasAttribute('value')) {
-					if(this.checked) a.push({
+					a.push({
 						name: this.name,
 						value: this.value
 					});
